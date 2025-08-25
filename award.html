@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award - Jamuan Akhir Tahun Pengawas Sesi 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <img src="/gambar/logoaziz.png">
+                </div>
+                <span>Pengawas 2025: A Final Toast</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="password-container">
+        <div class="password-box">
+            <h2>Password Required</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div class="awards-container">
+            <h1 class="awards-title">Pemenang Anugerah Pengawas 2025</h1>
+            
+            <div class="awards-section">
+                <h2>Pengawas Cemerlang</h2>
+                <div class="award-cards">
+                    <div class="award-card">
+                        <div class="award-icon">🏆</div>
+                        <h3>Pengawas Terbaik Keseluruhan</h3>
+                        <p class="winner-name">[Nama Pemenang]</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="awards-section">
+                <h2>Pengawas Contoh</h2>
+                <div class="award-cards">
+                    <div class="award-card">
+                        <div class="award-icon">🌟</div>
+                        <h3>Kepimpinan Cemerlang</h3>
+                        <p class="winner-name">[Nama Pemenang]</p>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">⭐</div>
+                        <h3>Dedikasi Cemerlang</h3>
+                        <p class="winner-name">[Nama Pemenang]</p>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">🎯</div>
+                        <h3>Disiplin Cemerlang</h3>
+                        <p class="winner-name">[Nama Pemenang]</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="awards-section">
+                <h2>Anugerah Khas</h2>
+                <div class="award-cards">
+                    <div class="award-card">
+                        <div class="award-icon">💫</div>
+                        <h3>Pengawas Harapan</h3>
+                        <p class="winner-name">[Nama Pemenang]</p>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">🤝</div>
+                        <h3>Perkhidmatan Cemerlang</h3>
+                        <p class="winner-name">[Nama Pemenang]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="index.html" class="btn-back">
+        ← Back to Home
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        function checkPassword() {
+            const password = "pengawas2025"; // Tukar password ini
+            const input = document.getElementById('password-input').value;
+            
+            if (input === password) {
+                document.getElementById('password-container').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Wrong password!');
+            }
+        }
+    </script>
+</body>
+</html>

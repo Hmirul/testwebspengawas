@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow - Jamuan Akhir Tahun Pengawas Sesi 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <img src="/gambar/logoaziz.png">
+                </div>
+                <span>Pengawas 2025: A Final Toast</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Galeri Kenangan</h1>
+                <p class="section-subtitle">Koleksi Memori Sepanjang Tahun 2025</p>
+            </div>
+
+            <div class="gallery-controls">
+                <div class="gallery-categories">
+                    <button class="category-btn active" data-category="all">Semua</button>
+                </div>
+                <div class="view-controls">
+                    <button class="view-btn" data-view="slideshow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M8 12l4 4 4-4"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid View -->
+            <div class="gallery-grid active-view" id="gridView">
+                <!-- Placeholder for 12 images -->
+                <div class="gallery-item" data-category="activities">
+                    <a href="https://drive.google.com/drive/folders/1-FaAed2mrGQezGFQ_DFZ3yAVa6Y4Ltck" target="_blank" class="gallery-link">
+                        <div class="image-placeholder">
+                            <span>Google Drive</span>
+                            <small>Klik untuk lihat gambar-gambar</small>
+                        </div>
+                        <div class="item-overlay">
+                            <h3>Koleksi Gambar Google Drive</h3>
+                            <p>Aktiviti Pengawas 2025</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Repeat similar blocks for other images -->
+                <div class="gallery-item" data-category="events">
+                    <div class="image-placeholder">
+                        <span>Majlis 1</span>
+                        <small>Upload gambar di sini</small>
+                    </div>
+                    <div class="item-overlay">
+                        <h3>Majlis Penyerahan Jawatan</h3>
+                        <p>Februari 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="training">
+                    <div class="image-placeholder">
+                        <span>Latihan 1</span>
+                        <small>Upload gambar di sini</small>
+                    </div>
+                    <div class="item-overlay">
+                        <h3>Kem Kepimpinan</h3>
+                        <p>Mac 2025</p>
+                    </div>
+                </div>
+
+                <!-- Add more placeholders -->
+                <div class="gallery-item" data-category="activities">
+                    <div class="image-placeholder">
+                        <span>Aktiviti 2</span>
+                        <small>Upload gambar di sini</small>
+                    </div>
+                    <div class="item-overlay">
+                        <h3>Program Disiplin</h3>
+                        <p>April 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="image-placeholder">
+                        <span>Majlis 2</span>
+                        <small>Upload gambar di sini</small>
+                    </div>
+                    <div class="item-overlay">
+                        <h3>Majlis Anugerah</h3>
+                        <p>Mei 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="training">
+                    <div class="image-placeholder">
+                        <span>Latihan 2</span>
+                        <small>Upload gambar di sini</small>
+                    </div>
+                    <div class="item-overlay">
+                        <h3>Bengkel Kepimpinan</h3>
+                        <p>Jun 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slideshow View -->
+            <div class="slideshow-container" id="slideshowView">
+                <div class="slideshow-wrapper">
+                    <button class="nav-btn prev-btn">❮</button>
+                    <button class="nav-btn next-btn">❯</button>
+                    
+                    <div class="slides">
+                        <!-- Slides will be populated from grid items -->
+                    </div>
+
+                    <div class="slideshow-info">
+                        <h3 class="slide-title">Judul Gambar</h3>
+                        <p class="slide-description">Keterangan gambar akan dipaparkan di sini</p>
+                    </div>
+
+                    <div class="slideshow-nav">
+                        <div class="nav-dots">
+                            <!-- Dots will be added dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back Button -->
+    <a href="index.html" class="btn-back">
+        ← Back to Home
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
